@@ -1,0 +1,155 @@
+:root {
+  --data-color-blue: #4cd89d;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.signup .container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.signup .container .logo-text {
+  color: var(--data-color-blue);
+  font-size: 35px;
+}
+
+.container .gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .gender .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(188, 176, 176);
+  padding: 3px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 150px;
+  height: 200px;
+  box-shadow: 0 0 8px 0px #a28787;
+  transition: 0.5s;
+}
+.container .gender .box:hover {
+  background-color: #e8f1eded;
+}
+.container .gender .box img {
+  width: 90px;
+}
+.container .gender .box p {
+  font-size: 30px;
+  margin: 10px 0;
+}
+.container .gender .box .done {
+  position: absolute;
+  opacity: 0;
+  width: 35px;
+  bottom: -9px;
+  right: -15px;
+  transition: 0.5s;
+}
+.container .gender .box.active .done {
+  opacity: 1;
+}
+.container .hello-text {
+  font-size: 20px;
+}
+/* ---------------------------------------------- */
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container form .inp-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container form .inp-box img {
+  position: absolute;
+  left: 15px;
+  width: 20px;
+}
+.container form .inp-box input {
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  outline: none;
+  border: #746d6d solid 1px;
+  font-size: 20px;
+}
+
+.container form .all-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 300px;
+}
+.container form .all-btn .btn-submit {
+  padding: 0 20px;
+  background-color: var(--data-color-blue);
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.5s;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.container form .all-btn .btn-submit a {
+  color: white;
+}
+.container form .all-btn .btn-submit:hover {
+  background-color: #6edbad;
+  letter-spacing: 2px;
+}
+
+.container form .all-btn .btn-log {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.container form .all-btn .btn-log a {
+  color: black;
+  font-size: 18px;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.container form .all-btn .btn-log a:hover {
+  color: #8a8484;
+  font-weight: 900;
+}
+.container .alert {
+  font-size: 20px;
+  padding: 2px 16px;
+  color: white;
+  background-color: red;
+  border-radius: 15px;
+  margin-top: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .alert.active {
+  opacity: 1;
+}
