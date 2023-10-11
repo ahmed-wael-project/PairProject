@@ -1,6 +1,6 @@
 input{
         font-size: 2em;
-        color: #0f0;
+        color:#333;
         text-transform: uppercase; 
        padding: 10px;  
        border-radius: 70px;
@@ -68,6 +68,9 @@ border-radius: 50px;
 }
 h2{
     color: white;
+}
+img{
+    background-image: cover;
 }
 
 
