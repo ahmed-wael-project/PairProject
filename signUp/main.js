@@ -13,7 +13,7 @@ let inputEmail = document.getElementById("email")
 let inputPassword = document.getElementById("password")
 let signupBtn = document.getElementsByClassName("btn-submit")[0]
 let alert = document.getElementsByClassName("alert")[0]
-console.log(inputEmail)
+
 
 signupBtn.addEventListener("click", (e) => {
     e.preventDefault()
@@ -31,13 +31,16 @@ signupBtn.addEventListener("click", (e) => {
 
 })
 
+var arrOfData = []
+
 function addData(email, password) {
     const data = {
         id: Date.now(),
         Email: email,
         Password: password
     }
-    save(data)
+    arrOfData.push(data)
+    save(arrOfData)
 }
 function save(data) {
     window.sessionStorage.setItem("data", JSON.stringify(data))

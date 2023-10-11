@@ -1,32 +1,34 @@
-input{
-        font-size: 2em;
-        color: #0f0;
-        text-transform: uppercase; 
-       padding: 10px;  
-       border-radius: 70px;
-       font-size: 20px;  
-       width: 300px;
-       height: 30px;
+input {
+  font-size: 2em;
+  color: black;
+  outline: none;
+  border: solid 4px black;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 70px;
+  font-size: 20px;
+  width: 300px;
+  height: 30px;
 }
-.container{
-    display: flex;
-    box-shadow: 0 0 0 black; 
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    box-shadow: 0 0 0 black;
-    background-color:white;
-    flex-direction: column;
+.container {
+  display: flex;
+  box-shadow: 0 0 0 black;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-shadow: 0 0 0 black;
+  background-color: white;
+  flex-direction: column;
 }
-.container form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-#log{
-    padding: 10px 20px;
+#log {
+  padding: 10px 20px;
   background-color: #333;
   color: #fff;
   border: none;
@@ -35,16 +37,15 @@ input{
   border-radius: 30px;
   padding: 10px;
   margin-top: 10px;
-  transition: 0.5s ;
+  transition: 0.5s;
   font-size: 21px;
-  
 }
-#log:hover{
-    background: rgb(7, 7, 70);
-    transition: 0.5s;
+#log:hover {
+  background: rgb(7, 7, 70);
+  transition: 0.5s;
 }
-#sign{
-    padding: 10px 20px;
+#sign {
+  padding: 10px 20px;
   background-color: #333;
   color: #fff;
   border: none;
@@ -53,21 +54,32 @@ input{
   border-radius: 30px;
   padding: 10px;
   margin-top: 10px;
-  transition: 0.5s ;
+  transition: 0.5s;
   font-size: 21px;
 }
-#sign:hover{
-    background: green;
-    transition: 0.5s;
+#sign:hover {
+  background: green;
+  transition: 0.5s;
 }
-form{
-    padding: 10px;
-    border:solid 2px black;
-    background-color: #4cd89d;
-border-radius: 50px;
+form {
+  padding: 10px;
+  border: solid 2px black;
+  background-color: #4cd89d;
+  border-radius: 50px;
 }
-h2{
-    color: white;
+h2 {
+  color: white;
 }
-
-
+a {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 82%;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.5s;
+  font-size: 21px;
+  text-decoration: none;
+}
