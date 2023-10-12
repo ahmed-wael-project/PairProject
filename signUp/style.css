@@ -45,9 +45,10 @@ a {
 }
 .container .gender .box:hover {
   background-color: #e8f1eded;
+  transform: skew(4deg, 5deg);
 }
 .container .gender .box img {
-  width: 90px;
+  width: 120px;
 }
 .container .gender .box p {
   font-size: 30px;
