@@ -1,0 +1,208 @@
+:root {
+  --data-color-green: #4cd89d;
+}
+html,body {
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth !important;
+}
+body {
+  margin: 0;
+}
+.container {
+  position: relative;
+  margin-top: 120px;
+  background: white;
+  background: linear-gradient(180deg, #d5daaf, #16c98978);
+}
+.container .heading {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2.8px;
+  margin: 0;
+  text-transform: capitalize;
+  padding: 40px 0;
+}
+.container .tips {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+.container .tips .tip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--data-color-green);
+  border-radius: 10px;
+  height: 170px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container .tips .tip::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  background-color: #ffffff6d;
+  width: 0%;
+  height: 0%;
+  transform: scale(0);
+  z-index: 2;
+}
+.container .tips .tip:hover::before {
+  height: 100%;
+  width: 100%;
+  transform: scale(12);
+}
+
+.container .tips .tip img {
+  transition: 0.5s;
+}
+.container .tips .tip:hover img {
+  transform: skew(10deg, 10deg);
+}
+.container .tips .tip .text {
+  font-weight: 500;
+  font-size: 20px;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .content .question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid 1px white;
+  box-shadow: 0px 0px 5px 1px #968181;
+  padding: 60px 0;
+  margin: 10px 0;
+  transition: 0.5s;
+  height: 160px;
+}
+.container .content .question p {
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.container .content .question .test {
+  display: flex;
+  align-items: center;
+}
+.container .content .question .test .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.container .content .question .test .list span {
+  border-radius: 50%;
+  border: dashed 2px #000000ba;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container .content .question .test .list span.active,
+.container .content .question .test .list span:hover {
+  background-color: var(--data-color-green);
+  border-color: var(--data-color-green);
+}
+
+.container .content .question .test .list span:first-child,
+.container .content .question .test .list span:last-child {
+  width: 50px;
+  height: 50px;
+}
+.container .content .question .test .list span:nth-child(2),
+.container .content .question .test .list span:nth-child(4) {
+  width: 30px;
+  height: 30px;
+}
+.container .content .question .test .list span:nth-child(3) {
+  width: 20px;
+  height: 20px;
+}
+.container .content .question .test p:first-child,
+.container .content .question .test p:last-child {
+  margin: 0 50px;
+}
+
+.container .submit {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: #673ab7;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: none;
+  font-size: 20px;
+  margin: 30px 0;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.container .submit:hover {
+  opacity: 0.7;
+}
+.container .alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 400px;
+
+}
+.container .alert::after {
+  content: "X";
+  color: black;
+  transition: 0.5s;
+  font-size: 28px;
+  position: absolute;
+  top: -13px;
+  right: -12px;
+  border-radius: 50%;
+  background: bisque;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container .alert::after:hover {
+  color: white;
+}
+
+.container .alert .text {
+  color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  padding: 10px;
+}

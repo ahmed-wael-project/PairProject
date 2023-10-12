@@ -1,9 +1,16 @@
+:root {
+  --data-color-blue: #4cd89d;
+}
+html {
+  font-family: "Raleway", sans-serif;
+}
+
 input {
   font-size: 2em;
   color: black;
   outline: none;
+  /* text-transform:capitalize; */
   border: solid 4px black;
-  text-transform: uppercase;
   padding: 10px;
   border-radius: 70px;
   font-size: 20px;
@@ -58,7 +65,7 @@ input {
   font-size: 21px;
 }
 #sign:hover {
-  background: green;
+  background: var(--data-color-blue);
   transition: 0.5s;
 }
 form {

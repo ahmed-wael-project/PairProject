@@ -20,11 +20,13 @@ login.addEventListener("click", e => {
 
 function check(inpEmail, inpPass) {
     var data = window.sessionStorage.getItem("data")
+    console.log(data)
     if (data) {
         var test = JSON.parse(data)
         test.forEach(data => {
-            if (inpEmail.value == data.Email & inpPass.value == data.Password) {
-                window.location("../")
+            let values = Object.values(data)
+            if (inpEmail == values[2] & inpPass == values[3]) {
+                window.location="../start/index.html"
             } else {
                 alert("Password Or Email InValid")
             }
