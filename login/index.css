@@ -1,3 +1,13 @@
+input{
+        font-size: 2em;
+        color:#333;
+        text-transform: uppercase; 
+       padding: 10px;  
+       border-radius: 70px;
+       font-size: 20px;  
+       width: 300px;
+       height: 30px;
+}
 :root {
   --data-color-blue: #4cd89d;
 }
@@ -90,3 +100,8 @@ a {
   font-size: 21px;
   text-decoration: none;
 }
+img{
+    background-image: cover;
+}
+
+
