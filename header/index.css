@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#myHeader {
+background-color: rgb(164, 225, 164);
+    color: #fff;
+    border-bottom: black 3px solid;
+    box-shadow: 0 0 26px 6px #241f
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.list li {
+    display: inline;
+    margin-right: 50px;
+}
+
+
+
+.list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.list li a:hover {
+    color: rgb(62, 62, 111);
+}
+
+svg {
+    width: 10%;
+}
