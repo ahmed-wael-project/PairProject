@@ -3,7 +3,7 @@ let text = document.querySelector(".resault .container .text ul li")
 
 let result = localStorage.getItem("person")
 heading.innerHTML = `Thank You You Are ${JSON.parse(result)} Person`
-console.log(text)
+console.log(result)
 
 switch (JSON.parse(result)) {
     case "ENFJ":

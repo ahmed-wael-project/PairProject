@@ -29,7 +29,7 @@ signupBtn.addEventListener("click", (e) => {
         addData(inputEmail.value, inputPassword.value, gender_type.getAttribute("data-gender"))
         alert.innerHTML = "Passed"
         alert.style.backgroundColor = "#4cd89d"
-        // window.location.href = "../login/index.html"
+        window.location.href = "../login/index.html"
     }
 
 })

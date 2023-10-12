@@ -21,8 +21,8 @@ class questionn {
             <span data-value="ENFJ"></span>
             <span data-value="ENFJs"></span>
             <span data-value="ENTP"></span>
-            <span data-value="ESFJ "></span>
-            <span data-value="ENFP "></span>
+            <span data-value="ESFJ"></span>
+            <span data-value="ENFP"></span>
           </div>
           <p>Desagree</p>
           </div>
