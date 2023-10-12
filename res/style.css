@@ -1,0 +1,62 @@
+:root {
+  --data-color-green: #4cd89d;
+}
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth !important;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+.resault {
+  position: relative;
+}
+.resault .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background: white;
+  background: linear-gradient(180deg, #d5daaf, #16c98978);
+}
+.resault .container .heading {
+  margin: 0;
+  margin-top: 20%;
+  z-index: 11;
+}
+.resault .container .text {
+  z-index: 11;
+}
+.resault .container .text ul li {
+  margin-top: 60px;
+  font-size: 22px;
+  text-align: center;
+}
+.resault svg {
+  position: absolute;
+  position: absolute;
+}
+.resault svg #one,
+.resault svg #three,
+.resault svg #two,
+.resault svg #four,
+.resault svg #five,
+.resault svg #six,
+.resault svg #seven,
+.resault svg #eight {
+  animation: top 2s linear 1 alternate;
+  transform: translateY(-100%);
+}
+
+@keyframes top {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
