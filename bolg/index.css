@@ -1,101 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
-    
-    
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
 }
-
+html {
+  font-family: "Raleway", sans-serif;
+}
 .blog {
-    background-color: #00ca7623;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  background-color: #00ca7623;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .blog-post {
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    
-}
-.blog-post .info-user{
-    display: none; 
-    transition: 0.5s;
-}
-.blog-post .info-user.active{
-    display: block;
-}
-
-#name{
-    display: flex;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+    align-items: center;
     justify-content: center;
-    color: black;
 }
-#fullName{
-    
-    padding: 10px 20px;
-    background-color: white;
-    border: none;
-    width: 40%;
-    
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 21px;
-  }
-  textarea{resize: none;
-
-max-height: 200px;
-align-items: center;
-justify-content: center;
-width: 400px;
-height: 500px;
-
-  }
-  #submit{
-   
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: 40%;
-    border-radius: 30px;
-    padding: 10px;
-    margin-top: 10px;
-    transition: 0.5s ;
-    font-size: 21px;
-    background: gray;
-   
-  }
-  #submit:hover{
-    background-color: #095c38;
-    transition: 0.5s;
-  }
-textarea{
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    padding: 10px;
+.blog-post .info-user {
+  display: none;
+  transition: 0.5s;
 }
-#icon{
-    border-radius: 10px;
-    position:fixed;
-    right:0;
-    bottom: 0;
-   width: 200px; 
-   height: 40px;
-}
-#icon  :hover{
-    background-color: #095c38;
-    transition: 0.5s;
+.blog-post .info-user.active {
+  display: block;
 }
 
-.blog .container{
-    height: 100vh;
+#name {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+#fullName {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  width: 40%;
+
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 21px;
+}
+textarea {
+  resize: none;
+
+  max-height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+}
+#submit {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.5s;
+  font-size: 21px;
+  background: gray;
+}
+#submit:hover {
+  background-color: #095c38;
+  transition: 0.5s;
+}
+textarea {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+#icon {
+  border-radius: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+#icon :hover {
+  background-color: #095c38;
+  transition: 0.5s;
 }
 
-
-
+.blog .container {
+  height: 100vh;
+}

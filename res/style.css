@@ -5,11 +5,9 @@ html,
 body {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth !important;
-}
-body {
   margin: 0;
-  overflow: hidden;
 }
+
 .resault {
   position: relative;
 }
@@ -25,8 +23,12 @@ body {
 }
 .resault .container .heading {
   margin: 0;
-  margin-top: 20%;
+  margin-top: 10%;
   z-index: 11;
+  
+}
+.resault .container .heading span {
+  color: #ff0000;
 }
 .resault .container .text {
   z-index: 11;
@@ -59,4 +61,38 @@ body {
   to {
     transform: translateY(-100%);
   }
+}
+
+body .alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: absolute;
+  background: var(--data-color-green);
+  border-radius: 20px;
+  width: 370px;
+  left: 50%;
+  height: 200px;
+  top: 50%;
+  transform: translate(-50%, 40%);
+}
+body .alert p {
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+  color: #2e4118;
+}
+body .alert .all_btn {
+  display: flex;
+  gap: 10px;
+}
+body .alert .all_btn button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 17px;
+    font-weight: 700;
 }

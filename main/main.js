@@ -3,75 +3,7 @@
 
 let container_sub = document.querySelector(".main .container ")
 let content = document.querySelector(".main .container .content ")
-class questionn {
-    constructor(question) {
-        this.question = question
-        this.res = []
 
-    }
-    display() {
-        Object.values(this.question).forEach((qst, i) => {
-            let test = document.createElement("div")
-            test.classList = "question"
-            test.innerHTML = `
-        <p>${i + 1}.${qst}</p>
-        <div class="test">
-          <p>Agree</p>
-          <div class="list">
-            <span data-value="ENFJ"></span>
-            <span data-value="ENFJs"></span>
-            <span data-value="ENTP"></span>
-            <span data-value="ESFJ"></span>
-            <span data-value="ENFP"></span>
-          </div>
-          <p>Desagree</p>
-          </div>
-          `
-            content.appendChild(test)
-        })
-    }
-    check() {
-        var test = allbtn.filter(ele => {
-            return ele.classList.contains("active")
-        })
-        if (test.length < Object.keys(question).length) {
-            let alert = document.createElement("div")
-            alert.classList.add("alert")
-            let text = document.createElement("span")
-            text.classList.add("text")
-            alert.appendChild(text)
-            text.innerHTML = "Please Check Your Answer"
-            container_sub.appendChild(alert)
-            window.scrollTo(
-                { top: 0, behavior: "smooth" }
-            );
-
-        }
-        else {
-            let obj = {}
-            test.forEach(ele => {
-                let att = ele.getAttribute('data-value')
-                if (obj[att] === undefined) {
-                    obj[att] = 1
-                } else {
-                    obj[att] += 1
-                }
-            });
-
-            let res = 0
-            let prop;
-            for (let key in obj) {
-                if (obj[key] > res) {
-                    res = obj[key]
-                    prop = key
-                }
-            }
-            window.localStorage.setItem("person", JSON.stringify(prop))
-            window.location = "../res/main.html"
-        }
-    }
-
-}
 
 const question = {
     1: "You regularly make new friends.",
@@ -135,7 +67,100 @@ const question = {
     31: "You rarely second-guess the choices that you have made"
 }
 
-let test = new questionn(question)
+class questionClass {
+    constructor(question) {
+        this.question = question
+    }
+
+    display() {
+        Object.values(this.question).forEach((qst, i) => {
+            let test = document.createElement("div")
+            test.classList = "question"
+            test.innerHTML = `
+        <p>${i + 1}.${qst}</p>
+        <div class="test">
+          <p>Agree</p>
+          <div class="list">
+            <span data-value="ENFJ"></span>
+            <span data-value="ENFJs"></span>
+            <span data-value="ENTP"></span>
+            <span data-value="ESFJ"></span>
+            <span data-value="ENFP"></span>
+          </div>
+          <p>Desagree</p>
+          </div>
+          `
+            content.appendChild(test)
+        })
+    }
+    check() {
+        var test = allbtn.filter(ele => {
+            return ele.classList.contains("active")
+        })
+        if (test.length < Object.keys(question).length) {
+            let alert = document.createElement("div")
+            alert.classList.add("alert")
+            let text = document.createElement("span")
+            text.classList.add("text")
+            let close = document.createElement("span")
+            close.classList.add("close")
+            close.textContent="X"
+            alert.appendChild(text)
+            alert.appendChild(close)
+            text.innerHTML = "Please Check Your Answer"
+            container_sub.appendChild(alert)
+
+
+            // let close = document.querySelector(".main .container .alert ")
+            close.addEventListener("click", e => {
+                e.currentTarget.parentElement.remove()
+            })
+
+            window.scrollTo(
+                { top: 10, behavior: "smooth" }
+            );
+
+        }
+        else {
+            let obj = {}
+            test.forEach(ele => {
+                let att = ele.getAttribute('data-value')
+                if (obj[att] === undefined) {
+                    obj[att] = 1
+                } else {
+                    obj[att] += 1
+                }
+            });
+            let res = 0
+            let prop;
+            for (let key in obj) {
+                if (obj[key] > res) {
+                    res = obj[key]
+                    prop = key
+                }
+            }
+            window.localStorage.setItem("person", JSON.stringify(prop))
+            window.location = "../res/main.html"
+        }
+    }
+
+    addToQst() {
+
+        let arrOfQst = JSON.parse(window.sessionStorage.getItem("question"))
+
+        if (arrOfQst) {
+            arrOfQst.forEach((ele, i) => {
+                let lengthObj = Object.keys(this.question).length
+                this.question[lengthObj + 2] = arrOfQst[i].question
+            });
+        }
+    }
+
+}
+
+
+let test = new questionClass(question)
+test.addToQst()
 test.display()
 
 
@@ -153,7 +178,6 @@ allbtn.forEach(btn => {
         e.target.classList.add("active")
         e.target.closest(".question").style.opacity = "0.5"
         window.scrollBy(0, 250)
-        // test.push(e.target.getAttribute("data-value"))
     })
 })
 
