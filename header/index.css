@@ -1,40 +1,66 @@
+:root {
+  --data-color-green: #4cd89d;
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+html {
+  font-family: "Raleway", sans-serif;
 }
 
 #myHeader {
-background-color: rgb(164, 225, 164);
-    color: #fff;
-    border-bottom: black 3px solid;
-    box-shadow: 0 0 26px 6px #241f
+  background-color: white;
+  color: #fff;
+  box-shadow: 0 0 26px 6px #e2c8c8;
+  z-index: 111;
+  position: relative;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
+#myHeader .logo img {
+  width: 130px;
+}
+#myHeader .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.list li {
-    display: inline;
-    margin-right: 50px;
+#myHeader .list li {
+  display: inline;
+  margin-right: 50px;
 }
 
-
-
-.list li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.5s;
+#myHeader .list li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.5s;
 }
 
-.list li a:hover {
-    color: rgb(62, 62, 111);
+#myHeader .list li a:hover {
+  color: rgb(62, 62, 111);
 }
 
-svg {
-    width: 10%;
+.container .user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container .user button {
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+}
+.container .user button:first-child {
+  background-color: #00fffd;
+}
+.container .user button:last-child {
+  background-color: var(--data-color-green);
+}
+.container .user button a {
+  text-decoration: none;
+  margin: 0;
+  color: white;
 }

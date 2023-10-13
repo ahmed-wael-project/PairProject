@@ -1,16 +1,16 @@
 :root {
   --data-color-green: #4cd89d;
 }
-html,body {
+html,
+body {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth !important;
 }
 body {
   margin: 0;
 }
-.container {
+.main .container {
   position: relative;
-  margin-top: 120px;
   background: white;
   background: linear-gradient(180deg, #d5daaf, #16c98978);
 }
@@ -94,16 +94,20 @@ body {
   padding: 60px 0;
   margin: 10px 0;
   transition: 0.5s;
-  height: 160px;
+  height: 200px;
 }
-.container .content .question p {
+.container .content .question > p {
   font-weight: 600;
   font-size: 25px;
   text-transform: capitalize;
+  text-align: center;
 }
 .container .content .question .test {
   display: flex;
   align-items: center;
+}
+.container .content .question .test > p {
+  font-size: 22px;
 }
 .container .content .question .test .list {
   display: flex;
@@ -177,10 +181,8 @@ body {
   transform: translate(-50%, -50%);
   height: 100px;
   width: 400px;
-
 }
-.container .alert::after {
-  content: "X";
+.container .alert .close {
   color: black;
   transition: 0.5s;
   font-size: 28px;

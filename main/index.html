@@ -8,9 +8,27 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="../footer/style.css" />
+    <link rel="stylesheet" href="../header/index.css" />
+    <title>Home</title>
   </head>
   <body>
+    <header id="myHeader">
+      <div class="container">
+        <div class="logo"><img src="../adminPage/img/logo2.png" alt="" /></div>
+        <ul class="list">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="user">
+          <button><a href="../signUp/index.html">SignUp</a></button>
+          <button><a href="../login/index.html">LogIn</a></button>
+        </div>
+      </div>
+    </header>
+
     <div class="main">
       <div class="container">
         <h2 class="heading">Personality test</h2>
@@ -31,9 +49,81 @@
           </div>
         </div>
         <div class="content"></div>
-          <button class="submit">find out who you are</button>
+        <button class="submit">find out who you are</button>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Waheer Nadada</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          RBK sousse<br />
+
+          <a class="footer__btn" href="">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="../bolg/index.html">Blog</a>
+            </li>
+            <li>
+              <a href="">twitter</a>
+            </li>
+            <li>
+              <a href="">facebook</a>
+            </li>
+            <li>
+              <a href="">instagram</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="../login/index.html">Admin</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2023 All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made by <span class="heart">♥</span> wael and ahmed</span>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./main.js"></script>
+  <script src="../header/ll.js"></script>
 </html>

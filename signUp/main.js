@@ -51,3 +51,9 @@ function addData(email, password, gender) {
 function save(data) {
     window.sessionStorage.setItem("data", JSON.stringify(data))
 }
+let admindata = {
+    admin: "admin",
+    password: "admin"
+  }
+  
+  window.sessionStorage.setItem("dataadmin",JSON.stringify(admindata))

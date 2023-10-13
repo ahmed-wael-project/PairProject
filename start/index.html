@@ -4,9 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../header/index.css" />
+    <link rel="stylesheet" href="../footer/style.css" />
+    <title>Footer</title>
   </head>
   <body>
+    <header id="myHeader">
+      <div class="container">
+        <div class="logo"><img src="../adminPage/img/logo.png" alt="" /></div>
+        <ul class="list">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="../bolg/index.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="user">
+          <button><a href="../signUp/index.html">SignUp</a></button>
+          <button><a href="../login/index.html">LogIn</a></button>
+        </div>
+      </div>
+    </header>
+
     <div class="start">
       <div class="container">
         <img class="back" src="./img/Game World.jpg" alt="" />
@@ -19,11 +38,85 @@
             you are and why you do things the way you do.
           </p>
           <button>
-            <a href="../main/index.html"> Take The Test <img src="./img/arrow.png" alt="" /></a>
+            <a href="../main/index.html">
+              Take The Test <img src="./img/arrow.png" alt=""
+            /></a>
           </button>
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Waheer Nadada</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          RBK sousse<br />
+
+          <a class="footer__btn" href="">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="../bolg/index.html">Blog</a>
+            </li>
+            <li>
+              <a href="">twitter</a>
+            </li>
+            <li>
+              <a href="">facebook</a>
+            </li>
+            <li>
+              <a href="">instagram</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="../login/index.html">Admin</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2023 All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made by <span class="heart">♥</span> wael and ahmed</span>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./main.js"></script>
+  <script src="ll.js"></script>
 </html>
